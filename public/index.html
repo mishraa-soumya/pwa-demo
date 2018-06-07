@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JSLOVERS PWA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link rel="manifest" href="manifest.json"/>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="donuts-wrapper">
+        <h3 >Donuts Menu</h3>
+        <ul>
+            <li><a href="choclate.html">Choclate Donuts</a></li>
+            <li><a href="strawberry.html">Strawberry Donuts</a></li>
+            <li><a href="caramel.html">Caramel Donuts</a></li>
+            <li><a href="orange.html">Orange Donuts</a></li>
+        </ul>
+        <figure>
+            <img src="/images/test.png" />
+        </figure>
+    </div>
+    <script>
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('serviceworker.js')
+            .then(function(registration){
+                console.log('Service worker is registered', registration);
+            },function(err){
+               console.log(err); 
+            })
+        }else{
+            console.log("Service Worker is not supported")
+        }
+    </script>
+</body>
+</html>

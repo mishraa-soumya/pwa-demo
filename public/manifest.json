@@ -1,0 +1,20 @@
+{
+    "name": "Donuts Shop",
+    "short_name": "Donuts",
+    "icons" : [
+        {
+            "src": "images/icon98x98.png",
+            "type": "image/png",
+            "sizes": "98x98"
+        },
+        {
+            "src": "images/icon144x144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        }
+    ],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "red",
+    "theme_color": "green"
+}
